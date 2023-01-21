@@ -10,7 +10,8 @@
         <div id="divcontent">
             <p id="pmain">Adicione informações sobre o produto que deseja anunciar:</p>
             <form method="POST" action="index.html">
-                <p>Nome: <input type="text" name="nomeProduto" size="25"></p>
+                <p>Nome:</p>
+                <input type="text" name="nomeProduto" size="25">
                 <p>Categoria do produto:</p>
                 <select>
                     <option value="conteudo">Feminina</option>
@@ -21,9 +22,12 @@
                     <option value="nenhum" selected>Selecione uma opção</option>
                 </select>
 
+                <p>Valor:</p>
+                R$<input type="number" name="valor" value="0,00">
+
                 <p>Produto novo?</p>
                 <input type="radio" name="avaliacao" value="1">Sim, novo
-                <input type="radio" name="avaliacao" value="0"> Não, usado
+                <input type="radio" name="avaliacao" value="0">Não, usado
 
                 <p>Descrição do anúncio</p>
                 <textarea name="anotacao"></textarea>
