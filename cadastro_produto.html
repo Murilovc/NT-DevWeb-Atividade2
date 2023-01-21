@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anúncio de produto</title>
+    </head>
+    <body>
+        <div id="divheader">
+            <h1 style="font-style: italic;">Outfit Place - Da sua loja de roupas para o mundo!</h1>
+        </div>
+        <div id="divcontent">
+            <p id="pmain">Adicione informações sobre o produto que deseja anunciar:</p>
+            <form method="POST" action="index.html">
+                <p>Nome: <input type="text" name="nomeProduto" size="25"></p>
+                <p>Categoria do produto:</p>
+                <select>
+                    <option value="conteudo">Feminina</option>
+                    <option value="conteudo">Masculina</option>
+                    <option value="conteudo">Infantil(0-12)</option>
+                    <option value="conteudo">Infantojuvenil</option>
+                    <option value="conteudo">Praia</option>
+                    <option value="nenhum" selected>Selecione uma opção</option>
+                </select>
+
+                <p>Produto novo?</p>
+                <input type="radio" name="avaliacao" value="1">Sim, novo
+                <input type="radio" name="avaliacao" value="0"> Não, usado
+
+                <p>Descrição do anúncio</p>
+                <textarea name="anotacao"></textarea>
+                <br>
+
+                <input type="reset" name="limpar" value="Cancelar">
+                <input type="submit" name="salvar" value="Salvar">
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <div id="divfooter">
+            N.A.V.E Tech - UFAC/SAMSUNG<br>
+            Site do Old Grupo 11, antes da mudança nos grupos.<br>
+            Desenvolvedores: 
+            <a href="https://github.com/anacarolinens" style="color:#FFFFFF">Ana Caroline</a> e 
+            <a href="https://github.com/Murilovc" style="color:#FFFFFF">Murilo Vieira</a>
+        </div>
+    </footer>
+
+    <style>
+        #textblue {
+            color: blue;
+        }
+
+        #divheader {
+            color: #FFFFFF;
+            background-color: #00A9A9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        #divcontent {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+
+        #divfooter {
+            color: #FFFFFF;
+            background-color: #00A9A9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            position: absolute;
+	        bottom: 0;
+            width: 100%;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #pmain {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</html>
