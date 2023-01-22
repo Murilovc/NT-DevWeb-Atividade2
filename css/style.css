@@ -14,7 +14,13 @@ body{
 }
 
 
-
+.header-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+}
 
 .divheader {
     background-color: #090a0a;

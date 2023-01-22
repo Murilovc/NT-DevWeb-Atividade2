@@ -5,14 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css">
         <title>Anúncio de produto</title>
     </head>
     <body>
-        <div id="divheader">
+        <!--<div id="divheader">
             <h1 style="font-style: italic;">Outfit Place - Da sua loja de roupas para o mundo!</h1>
-        </div>
-        <br>
-        <br>
+        </div>-->
+        <header class="header">
+            <div class="divheader" >
+                <h1>
+                    <button class="header-img">
+                        <img src="images/buscar.png" alt="botão buscar">
+                    </button>
+                    <input class="btn-buscar" type="text" placeholder="buscar..">
+                    <img src="images/logo.png" alt="Logo Outfit Place" width="110px">
+                </h1>
+                
+            </div>
+       </header>
+       <section class="menu-nav-sec">
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#">Lançamento</a></li>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Acessorios</a></li>
+            </ul>
+        </nav>
+        </section>
         <br>
         <div id="divcontent">
             <p id="pmain">Adicione informações sobre o produto que deseja anunciar:</p>
@@ -40,26 +61,27 @@
                 <textarea name="anotacao"></textarea>
                 <br>
 
-                <input type="reset" name="limpar" value="Cancelar">
-                <input type="submit" name="salvar" value="Salvar">
+                <p>Imagem do produto:</p>
+                <input type="file" name="imagem" value="imagemProduto">
+                <br>
+
+                <p><input type="reset" name="limpar" value="Cancelar">
+                <input type="submit" name="salvar" value="Salvar"></p>
             </form>
         </div>
     </body>
 
-    <footer>
-        <div id="divfooter">
-            N.A.V.E Tech - UFAC/SAMSUNG<br>
-            Site do Old Grupo 11, antes da mudança nos grupos.<br>
-            Desenvolvedores: 
+    <footer class="footer">
+        <div class="container-footer">
+            <p>N.A.V.E Tech - UFAC/SAMSUNG<br>
+            Site do Old Grupo 11, antes da mudança nos grupos.<br></p>
+            <p>Desenvolvedores: 
             <a href="https://github.com/anacarolinens" style="color:#FFFFFF">Ana Caroline</a> e 
-            <a href="https://github.com/Murilovc" style="color:#FFFFFF">Murilo Vieira</a>
+            <a href="https://github.com/Murilovc" style="color:#FFFFFF">Murilo Vieira</a></p>
         </div>
     </footer>
 
     <style>
-        #textblue {
-            color: blue;
-        }
 
         #divheader {
             color: #FFFFFF;
@@ -84,12 +106,6 @@
             position: absolute;
 	        bottom: 0;
             width: 100%;
-        }
-
-        p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 14px;
         }
 
         #pmain {
